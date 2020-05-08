@@ -2,6 +2,7 @@ package com.t20worldcup.flows;
 
 
 import co.paralleluniverse.fibers.Suspendable;
+import com.r3.corda.lib.tokens.contracts.states.NonFungibleToken;
 import com.t20worldcup.states.T20CricketTicket;
 import com.r3.corda.lib.accounts.contracts.states.AccountInfo;
 import com.r3.corda.lib.accounts.workflows.UtilitiesKt;
@@ -23,8 +24,9 @@ import net.corda.core.transactions.TransactionBuilder;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.UUID;
-
+import java.util.stream.Collectors;
 
 /**
  * This is the DVP flow, where the buyer account buys the ticket token from the dealer account and in turn transfers him cash worth of the ticket.
@@ -147,4 +149,3 @@ class BuyT20CricketTicketFlowResponder extends FlowLogic<Void> {
         return null;
     }
 }
-

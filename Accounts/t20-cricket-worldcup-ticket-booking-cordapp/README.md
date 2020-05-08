@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/corda/samples-java/blob/DEVREL-1623/Accounts/t20-cricket-worldcup-ticket-booking-cordapp/images/T20-World-Cup-e1578570579412.jpg" alt="Corda" width="2000">
+  <img src="./images/T20-World-Cup-e1578570579412.jpg" alt="Corda" width="2000">
 </p>
 
 # T20 Cricket World Cup Ticket Booking using Accounts and Tokens
